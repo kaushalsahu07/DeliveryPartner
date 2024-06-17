@@ -1,0 +1,1 @@
+console.log("Dont write any cartoon name")
