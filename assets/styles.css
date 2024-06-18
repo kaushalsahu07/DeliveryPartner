@@ -6,3 +6,21 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    height: 90px;
+    background-color: #333;   
+}
+nav .logo{
+    color: aliceblue;
+}
+nav .logo{
+    font-weight: 900;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
