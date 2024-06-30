@@ -1,61 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 /* root */
-:root{
-    --primary-color: rgb(44, 44, 255);
-    --background-color: rgb(17, 17, 68);
-    --white-color: aliceblue;
-    --light-white-color: #a8a8a8;
+:root {
+  --primary-color: rgb(13, 66, 255);
+  --background-color: rgb(14, 29, 52);
+  --secend-color: rgb(15, 62, 227);
+  --white-color: aliceblue;
+  --light-white-color: #a8a8a8;
 }
-header{
-    background-color: var(--background-color);
-    height: 80vh;
+header {
+  background-image: url(./files/img/world-dotted-map.png);
+  background-size: cover;
+  background-color: var(--background-color);
+  height: auto;
 }
-header .bg-img{
-    position: absolute;
-    width: 100%;
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  height: 70px;
+  padding: 10px 0;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    font-family: "Roboto", sans-serif;
+nav .logo {
+  font-size: 30px;
+  color: var(--white-color);
+  font-weight: 900;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav ul li a {
+  font-size: 18px;
+  color: var(--light-white-color);
+}
+nav .nav-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+nav .nav-btn:hover{
+  background-color: var(--secend-color);
+}
+nav .nav-active {
+  color: var(--white-color);
+}
+nav .nav-left {
+  display: flex;
+  gap: 20px;
+}
+nav .nav-left .nav-icon {
+  color: var(--white-color);
+  border: none;
+  padding: 15px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+.nav-icon{
+  display: none;
+}
+@media (max-width: 780px) {
+  .nav-icon{
+    display: block;
+  }
+  nav{
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  .nav-menu {
+    position: fixed;
+		top: 80px;
+		left: -100%;
+		background-color: var(--white-color);
+		height: 80%;
+		width: 100%;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 70px;
-    padding: 10px 0;  
-}
-nav .logo{
-    font-size: 30px;
-    color: var(--white-color);
-    font-weight: 900;
-}
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-nav ul .nav-menu{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-nav ul li a{
-    font-size: 18px;
-    color: var(--light-white-color);
-}
-nav .nav-btn{
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    padding: 12px 25px;
+		display: flex;
+    text-align: left;
     border-radius: 10px;
-    outline: none;
-}
-nav .nav-active{
-    color: var(--white-color);
+		transition: all 0.3s ease;
+  }
+  nav ul li {
+    padding: 10px 0px;
+  }
+  nav ul li a{
+    color: var(--background-color);
+  }
+  nav .nav-active {
+    color: var(--primary-color);
+  }
 }
