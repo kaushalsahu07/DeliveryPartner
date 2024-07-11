@@ -161,7 +161,7 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-.link {
+#link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +170,7 @@ main {
 .link-box {
   display: flex;
 }
-.link .link-icon {
+#link .link-icon {
   font-size: 40px;
   padding: 0 20px;
   color: var(--primary-color);
@@ -198,6 +198,13 @@ main {
 .link-box:hover .link-btn,
 .link-box:hover .link-btn span {
   color: var(--primary-color); /* Change to the desired color */
+}
+/*  */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
 }
 
 @media (max-width: 1250px) {
