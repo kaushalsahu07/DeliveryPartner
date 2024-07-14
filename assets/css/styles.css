@@ -21,6 +21,28 @@ header {
   background-color: var(--background-color);
   height: auto;
 }
+/* Scrollup */
+.scrollup {
+  background-color: var(--primary-color);
+  position: fixed;
+  bottom: -20%;
+  right: 20px;
+  padding: 15px 18px;
+  transition: 0.9s;
+  opacity: 0.8;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.scrollup i {
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 10%;
+}
 /* nav */
 nav {
   display: flex;
@@ -229,7 +251,7 @@ main {
     flex-wrap: wrap;
   }
   /* link */
-  .link {
+  #link {
     flex-wrap: wrap;
   }
   .link-box {
