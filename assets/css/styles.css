@@ -228,7 +228,40 @@ main {
   align-items: center;
   padding: 60px 40px;
 }
-
+.about-section{
+  max-width: 40pc;
+  padding: 0 50px 0px 0;
+}
+.about-section h1{
+  color: var(--secend-color);
+  font-weight: 900;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.about-section p{
+  padding: 0 0px 20px 0;
+  color: var(--light-black-color);
+}
+.about-box{
+  display: flex;
+  padding: 10px 0; 
+}
+.about-img i{
+  padding: 10px 20px 10px 0px;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+.about-item-title{
+  padding: 5px 0;
+  color: var(--secend-color);
+}
+.about-item-peregram{
+  color: var(--light-black-color);
+}
+/* video */
+.about-video img{
+  max-width: 40pc;
+}
 @media (max-width: 1250px) {
   .home {
     display: flex;
