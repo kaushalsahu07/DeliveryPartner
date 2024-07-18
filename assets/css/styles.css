@@ -15,6 +15,7 @@
   --light-white-color: #a8a8a8;
   --light-black-color: #212121;
 }
+/* header */
 header {
   background-image: url(./files/img/world-dotted-map.png);
   background-size: cover;
@@ -39,7 +40,6 @@ header {
   color: var(--white-color);
 }
 
-/* Show Scroll Up*/
 .show-scroll {
   bottom: 10%;
 }
@@ -108,7 +108,7 @@ nav .nav-left .nav-icon {
   padding: 70px 0;
 }
 .home-section {
-  width: 60vh;
+  width: 70vh;
 }
 .home-section h1 {
   padding: 0 10px 0 0;
@@ -153,7 +153,7 @@ nav .nav-left .nav-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
 }
 .home-section .home-sec .home-sec-box {
   color: var(--white-color);
@@ -175,19 +175,22 @@ nav .nav-left .nav-icon {
 }
 .home-img img {
   margin-left: 80px;
-  width: 55vh;
+  width: 60vh;
 }
-/* links */
+/* main */
 main {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
 }
+section{
+  padding: 60px 40px;
+}
+/* links */
 #link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
 }
 .link-box {
   display: flex;
@@ -221,12 +224,11 @@ main {
 .link-box:hover .link-btn span {
   color: var(--primary-color); /* Change to the desired color */
 }
-/*  */
+/* about */
 #about {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
 }
 .about-section{
   max-width: 40pc;
@@ -262,7 +264,10 @@ main {
 .about-video img{
   max-width: 40pc;
 }
+
+
 @media (max-width: 1250px) {
+  /* home */
   .home {
     display: flex;
     flex-direction: column;
@@ -307,6 +312,7 @@ main {
 }
 
 @media (max-width: 780px) {
+  /* nav */
   .nav-icon {
     display: block;
   }
@@ -340,13 +346,15 @@ main {
   }
 }
 @media (max-width: 430px) {
-  main{
-    width: 100%;
-  }
+  /* home */
   .home-section h1 {
     font-size: 30px;
   }
   .home-sec {
     font-size: 18px;
+  }
+  /* main */
+  main{
+    width: 100%;
   }
 }
