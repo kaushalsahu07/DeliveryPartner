@@ -4,7 +4,9 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* root */
 :root {
@@ -12,7 +14,7 @@
   --background-color: rgb(14, 29, 52);
   --secend-color: rgb(0, 25, 115);
   --white-color: aliceblue;
-  --light-white-color: #a8a8a8;
+  --light-white-color: #a9a9a9;
   --light-black-color: #212121;
 }
 /* header */
@@ -182,9 +184,23 @@ main {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
-section{
+section {
   padding: 60px 40px;
+  position: relative;
+}
+.opacity {
+  font-size: 3pc;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  top: 25px;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--primary-color), transparent 90%);
 }
 /* links */
 #link {
@@ -230,41 +246,89 @@ section{
   justify-content: center;
   align-items: center;
 }
-.about-section{
+.about-section {
   max-width: 40pc;
   padding: 0 50px 0px 0;
 }
-.about-section h1{
+.about-section h1 {
   color: var(--secend-color);
-  font-weight: 900;
   font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   padding: 10px 0;
 }
-.about-section p{
+.about-section p {
   padding: 0 0px 20px 0;
   color: var(--light-black-color);
 }
-.about-box{
+.about-box {
   display: flex;
-  padding: 10px 0; 
+  padding: 10px 0;
 }
-.about-img i{
+.about-img i {
   padding: 10px 20px 10px 0px;
   font-size: 35px;
   color: var(--primary-color);
 }
-.about-item-title{
+.about-item-title {
   padding: 5px 0;
   color: var(--secend-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
-.about-item-peregram{
+.about-item-peregram {
   color: var(--light-black-color);
 }
 /* video */
-.about-video img{
+.about-video img {
   max-width: 40pc;
 }
-
+/* services */
+.services-header {
+  text-align: center;
+}
+.services-header h1 {
+  color: var(--secend-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.services-header p {
+  color: var(--light-black-color);
+}
+/* services box */
+.services-box-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.services-box {
+  max-width: 450px;
+  height: auto;
+  border: 1px solid var(--light-white-color);
+}
+.services-box-img img {
+  width: 100%;
+}
+.services-box-info {
+  padding: 30px 30px;
+}
+.services-box-info h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--secend-color);
+}
+.services-box-info p {
+  padding: 10px 0 0 0;
+  color: var(--light-white-color);
+}
 
 @media (max-width: 1250px) {
   /* home */
@@ -303,15 +367,20 @@ section{
     align-items: center;
     flex-flow: column-reverse;
   }
-  .about-section{
+  .about-section {
     padding: 30px 0px;
   }
-  .about-video img{
+  .about-video img {
     width: 95%;
   }
 }
 
 @media (max-width: 780px) {
+  .opacity {
+    font-size: 40px;
+    top: 30px;
+    color: color-mix(in srgb, var(--primary-color), transparent 95%);
+  }
   /* nav */
   .nav-icon {
     display: block;
@@ -344,6 +413,32 @@ section{
   nav .nav-active {
     color: var(--primary-color);
   }
+  /* about */
+  .about-section h1 {
+    font-size: 25px;
+  }
+  .about-section p {
+    font-size: 15px;
+  }
+  .about-img i {
+    font-size: 28px;
+  }
+  .about-item-title {
+    font-size: 18px;
+  }
+  /* service */
+  .services-header h1 {
+    font-size: 28px;
+  }
+  .services-header p {
+    font-size: 15px;
+  }
+  .services-box-info h2 {
+    font-size: 20px;
+  }
+  .services-box-info p {
+    font-size: 15px;
+  }
 }
 @media (max-width: 430px) {
   /* home */
@@ -354,7 +449,7 @@ section{
     font-size: 18px;
   }
   /* main */
-  main{
+  main {
     width: 100%;
   }
 }
