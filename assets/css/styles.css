@@ -309,11 +309,20 @@ section {
   gap: 20px;
 }
 .services-box {
-  max-width: 450px;
+  max-width: 400px;
   height: auto;
   border: 1px solid var(--light-white-color);
+  cursor: pointer;
+}
+.services-box:hover .services-box-img img{
+  transform: scale(1.2);
+}
+.services-box-img{
+  width: 100%;
+  overflow: hidden;
 }
 .services-box-img img {
+  transition: .2s;
   width: 100%;
 }
 .services-box-info {
@@ -322,11 +331,13 @@ section {
 .services-box-info h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-size: 20px;
   font-weight: 700;
   color: var(--secend-color);
 }
 .services-box-info p {
   padding: 10px 0 0 0;
+  font-size: 15px;
   color: var(--light-white-color);
 }
 
