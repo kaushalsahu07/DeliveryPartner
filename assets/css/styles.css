@@ -19,7 +19,7 @@
 }
 /* header */
 header {
-  background-image: url(./files/img/world-dotted-map.png);
+  background-image: url(../img/world-dotted-map.png);
   background-size: cover;
   background-color: var(--background-color);
   height: auto;
@@ -181,14 +181,14 @@ nav .nav-left .nav-icon {
 }
 /* main */
 main {
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 section {
-  padding: 60px 40px;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 0px;
   position: relative;
 }
 .opacity {
@@ -340,6 +340,67 @@ section {
   font-size: 15px;
   color: var(--light-white-color);
 }
+/* cta */
+
+#calltoaction{
+  width: 100%;
+  padding: 30px 0;
+}
+.cta-section {
+  background: url('../img/cta-bg.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100%; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  padding: 100px;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 60vh; 
+}
+
+.cta-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 16px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+
 
 @media (max-width: 1250px) {
   /* home */
@@ -462,5 +523,15 @@ section {
   /* main */
   main {
     width: 100%;
+  }
+  /*  */
+  .cta-content{
+    padding: 100px 0;
+  }
+  .cta-content h2{
+    font-size: 25px;
+  }
+  .cta-content p{
+    font-size: 15px;
   }
 }
