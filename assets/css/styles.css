@@ -463,8 +463,98 @@ section {
   padding: 0 0 0 5px;
   color: var(--light-white-color);
 }
+/*  */
+.pricing-header {
+  text-align: center;
+}
+.pricing-header h1 {
+  color: var(--secend-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.pricing-header p {
+  color: var(--light-black-color);
+}
+.pricing-boxs-link{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.pricing-box{
+  margin-top: 40px;
+  padding: 50px 70px 60px 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px var(--light-white-color);
+}
+.pricing-box-header{
+  padding: 10px 0;
+  color: var(--secend-color);
+}
+.pricing-box-pt sup{
+  color: var(--primary-color);
+  font-size: 25px;
+}
+.pricing-box-pt-money{
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 45px;
+}
+.pricing-box-pt-time{
+  color: var(--light-white-color);
+  font-size: 20px;
+}
+.pricing-box-list{
+  padding: 20px 0 40px 0;
+  color: var(--light-black-color);
+}
+.pricing-box-list-section{
+  display: flex;
+  padding: 10px 0;
+  gap: 10px;
+}
+.pricing-box-list-section i{
+  color: #059652;
+}
+.pricing-box-button{
+  margin-top: 20px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: var(--primary-color);
+  transition: 0.4s all;
+  border: 1px solid var(--primary-color);
+}
+.pricing-box-button:hover{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
 
-
+/* pricing changes */
+.pricing-wrong p{
+  text-decoration: line-through;
+  color: color-mix(in srgb, var(--light-white-color), transparent 60%);
+}
+.pricing-wrong i{
+  color: color-mix(in srgb, var(--light-white-color), transparent 60%);
+}
+.pricing-box-main{
+  border-top: 5px solid var(--primary-color);
+}
+.pricing-box-button-main{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.pricing-box-button-main:hover{
+  background: none;
+  color: var(--primary-color);
+}
 @media (max-width: 1250px) {
   /* home */
   .home {
@@ -515,6 +605,10 @@ section {
     width: 95%;
   }
   .feartures_section{
+    flex-direction: column;
+  }
+  /*  */
+  .pricing-boxs-link{
     flex-direction: column;
   }
 }
