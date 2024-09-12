@@ -11,7 +11,7 @@
 /* root */
 :root {
   --primary-color: rgb(13, 66, 255);
-  --background-color: rgb(14, 29, 52);
+  --background-color: #0e1d34;
   --secend-color: rgb(0, 25, 115);
   --white-color: aliceblue;
   --light-white-color: #979797;
@@ -340,8 +340,8 @@ section {
   font-size: 15px;
   color: var(--light-white-color);
 }
-/* cta */
 
+/* cta */
 #calltoaction {
   width: 100%;
   padding: 30px 0;
@@ -404,8 +404,8 @@ section {
   border: 2px solid var(--primary-color);
 }
 
- /* Features */
- .features-header {
+/* Features */
+.features-header {
   text-align: center;
 }
 .features-header h1 {
@@ -419,51 +419,52 @@ section {
   color: var(--light-black-color);
 }
 
-.feartures_section{
+.feartures_section {
   padding: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.features-img img{
+.features-img img {
   max-width: 500px;
 }
-.featuers-title{
+.featuers-title {
   max-width: 40pc;
 }
-.featuers-title h1{
+.featuers-title h1 {
   padding: 10px 0;
   color: var(--secend-color);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-.featuers-title p{
+.featuers-title p {
   font-style: italic;
   padding: 5px 0 20px 0;
   color: var(--light-white-color);
 }
 /* for 2 and 4 */
-.feartures_section_2, .feartures_section_4 {
-   flex-flow: row-reverse;
+.feartures_section_2,
+.feartures_section_4 {
+  flex-flow: row-reverse;
 }
- .featuers-title .feartures-p{
+.featuers-title .feartures-p {
   padding: 10px 0 0 0;
   font-style: normal;
 }
 /* for 1 and 3 */
-.featuers-title ul li{
+.featuers-title ul li {
   padding: 0 0 20px 0;
 }
-.featuers-title ul li i{
+.featuers-title ul li i {
   color: var(--primary-color);
 }
-.featuers-title ul li span{
+.featuers-title ul li span {
   padding: 0 0 0 5px;
   color: var(--light-white-color);
 }
-/*  */
+/* pricing */
 .pricing-header {
   text-align: center;
 }
@@ -477,7 +478,7 @@ section {
 .pricing-header p {
   color: var(--light-black-color);
 }
-.pricing-boxs-link{
+.pricing-boxs-link {
   display: flex;
   gap: 40px;
   align-items: center;
@@ -488,42 +489,42 @@ section {
   font-weight: 700;
   font-style: normal;
 }
-.pricing-box{
+.pricing-box {
   margin-top: 40px;
   padding: 50px 70px 60px 50px;
   border-radius: 10px;
   box-shadow: 1px 1px 7px var(--light-white-color);
 }
-.pricing-box-header{
+.pricing-box-header {
   padding: 10px 0;
   color: var(--secend-color);
 }
-.pricing-box-pt sup{
+.pricing-box-pt sup {
   color: var(--primary-color);
   font-size: 25px;
 }
-.pricing-box-pt-money{
+.pricing-box-pt-money {
   color: var(--primary-color);
   font-weight: 500;
   font-size: 45px;
 }
-.pricing-box-pt-time{
+.pricing-box-pt-time {
   color: var(--light-white-color);
   font-size: 20px;
 }
-.pricing-box-list{
+.pricing-box-list {
   padding: 20px 0 40px 0;
   color: var(--light-black-color);
 }
-.pricing-box-list-section{
+.pricing-box-list-section {
   display: flex;
   padding: 10px 0;
   gap: 10px;
 }
-.pricing-box-list-section i{
+.pricing-box-list-section i {
   color: #059652;
 }
-.pricing-box-button{
+.pricing-box-button {
   margin-top: 20px;
   padding: 10px 40px;
   border-radius: 20px;
@@ -531,30 +532,89 @@ section {
   transition: 0.4s all;
   border: 1px solid var(--primary-color);
 }
-.pricing-box-button:hover{
+.pricing-box-button:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
 /* pricing changes */
-.pricing-wrong p{
+.pricing-wrong p {
   text-decoration: line-through;
   color: color-mix(in srgb, var(--light-white-color), transparent 60%);
 }
-.pricing-wrong i{
+.pricing-wrong i {
   color: color-mix(in srgb, var(--light-white-color), transparent 60%);
 }
-.pricing-box-main{
+.pricing-box-main {
   border-top: 5px solid var(--primary-color);
 }
-.pricing-box-button-main{
+.pricing-box-button-main {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
-.pricing-box-button-main:hover{
+.pricing-box-button-main:hover {
   background: none;
   color: var(--primary-color);
 }
+/* testimonial */
+#testimonial{
+  width: 100%;
+  padding: 30px 0;
+}
+.testimonial-bg {
+  background: url("../img/testimonials-bg.jpg") no-repeat center center/cover;
+  width: 100%;
+  color: white;
+}
+.testimonial-bg-color{
+  height: 55vh;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper{
+  max-width: 65pc;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  place-content: center;
+}
+.testimonial-img img{
+  width: 100px;
+  border-radius: 100%;
+  border: 8px solid color-mix(in srgb, var(--light-white-color), transparent 50%) ;
+}
+.swiper-slide h4{
+  color: var(--light-white-color);
+  padding: 5px 0 0 0;
+}
+.swiper-slide .stars{
+  margin: 10px 0 20px 0;
+  color: rgb(215, 215, 1);
+  font-size: 15px;
+}
+.swiper-slide p{
+  color: var(--white-color);
+}
+.swiper-slide p i{
+  color: var(--light-white-color);
+  font-size: 20px;
+}
+.swiper-slide span{
+  padding: 0 10px;
+}
+/* bullet */
+.swiper-pagination-bullet{
+  background-color: var(--white-color) !important;
+  padding: 1px;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--light-white-color) !important;
+}
+
 @media (max-width: 1250px) {
   /* home */
   .home {
@@ -599,17 +659,21 @@ section {
     width: 95%;
   }
   /* feartures */
-  .feartures_items{
+  .feartures_items {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
   }
-  .feartures_section{
+  .feartures_section {
     flex-direction: column;
   }
   /*  */
-  .pricing-boxs-link{
+  .pricing-boxs-link {
     flex-direction: column;
+  }
+   /*  */
+   .swiper-slide p{
+    padding: 0 20px;
   }
 }
 
@@ -678,7 +742,7 @@ section {
     font-size: 15px;
   }
   /* feartures */
-  .feartures_section .features-img img{
+  .feartures_section .features-img img {
     width: 98%;
   }
 }
@@ -703,5 +767,16 @@ section {
   }
   .cta-content p {
     font-size: 15px;
+  }
+  /*  */
+  .swiper-slide p{
+    padding: 0 15px;
+    font-size: 15px;
+  }
+  .swiper-slide p i{
+    font-size: 15px;
+  }
+  .swiper-slide span{
+    padding: 0 5px;
   }
 }
