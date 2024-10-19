@@ -557,7 +557,7 @@ section {
   color: var(--primary-color);
 }
 /* testimonial */
-#testimonial{
+#testimonial {
   width: 100%;
   padding: 30px 0;
 }
@@ -566,15 +566,19 @@ section {
   width: 100%;
   color: white;
 }
-.testimonial-bg-color{
+.testimonial-bg-color {
   height: 55vh;
   width: 100%;
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 30%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.swiper{
+.swiper {
   max-width: 65pc;
   height: 100%;
 }
@@ -582,37 +586,129 @@ section {
   text-align: center;
   place-content: center;
 }
-.testimonial-img img{
+.testimonial-img img {
   width: 100px;
   border-radius: 100%;
-  border: 8px solid color-mix(in srgb, var(--light-white-color), transparent 50%) ;
+  border: 8px solid
+    color-mix(in srgb, var(--light-white-color), transparent 50%);
 }
-.swiper-slide h4{
+.swiper-slide h4 {
   color: var(--light-white-color);
   padding: 5px 0 0 0;
 }
-.swiper-slide .stars{
+.swiper-slide .stars {
   margin: 10px 0 20px 0;
   color: rgb(215, 215, 1);
   font-size: 15px;
 }
-.swiper-slide p{
+.swiper-slide p {
   color: var(--white-color);
 }
-.swiper-slide p i{
+.swiper-slide p i {
   color: var(--light-white-color);
   font-size: 20px;
 }
-.swiper-slide span{
+.swiper-slide span {
   padding: 0 10px;
 }
 /* bullet */
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: var(--white-color) !important;
   padding: 1px;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--light-white-color) !important;
+}
+/* faq */
+.faq-title,
+.faq-title h1 {
+  text-align: center;
+  color: var(--secend-color);
+}
+.faq-title p {
+  color: var(--light-black-color);
+}
+/* faq box */
+.faq-list {
+  margin-top: 40px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  color: var(--light-black-color);
+  padding: 20px 15px 0 15px;
+}
+
+.plus {
+  color: var(--secend-color);
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 8px;
+  z-index: 5;
+  font-size: 30px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel:checked ~ .faq-question {
+  background-color: var(--background-color);
+}
+
+.panel {
+  display: none;
 }
 
 @media (max-width: 1250px) {
@@ -671,9 +767,15 @@ section {
   .pricing-boxs-link {
     flex-direction: column;
   }
-   /*  */
-   .swiper-slide p{
+  /*  */
+  .swiper-slide p {
     padding: 0 20px;
+  }
+  /* faq */
+  .faq-question {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -745,7 +847,23 @@ section {
   .feartures_section .features-img img {
     width: 98%;
   }
+  /* faq */
+  .panel-title {
+    font-size: 18px;
+    padding: 0px 0px 0 30px;
+  }
+  .plus {
+    margin-left: 0;
+    margin-top: -4px;
+  }
+  .panel-content {
+    font-size: 18px;
+  }
+  .panel:checked ~ .panel-content {
+    padding: 15px 0px 0px 0px;
+  }
 }
+
 @media (max-width: 430px) {
   /* home */
   .home-section h1 {
@@ -768,15 +886,29 @@ section {
   .cta-content p {
     font-size: 15px;
   }
-  /*  */
-  .swiper-slide p{
+  /* swiper */
+  .swiper-slide p {
     padding: 0 15px;
     font-size: 15px;
   }
-  .swiper-slide p i{
+  .swiper-slide p i {
     font-size: 15px;
   }
-  .swiper-slide span{
+  .swiper-slide span {
     padding: 0 5px;
+  }
+  /* faq */
+  .plus {
+    margin-top: 0px;
+    margin-left: -10px;
+  }
+  .panel-title {
+    padding: 0px 0px 0 15px;
+  }
+  .panel-content{
+    font-size: 17px;
+  }
+  .for-mb{
+    font-size: 25px;
   }
 }
