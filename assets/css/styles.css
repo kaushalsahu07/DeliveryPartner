@@ -556,6 +556,7 @@ section {
   background: none;
   color: var(--primary-color);
 }
+
 /* testimonial */
 #testimonial {
   width: 100%;
@@ -715,11 +716,11 @@ footer{
   background-color: var(--background-color);
 }
 .footer-top{
-  gap: 20px;
+  gap: 60px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 70px 0;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -727,7 +728,7 @@ footer{
   border-bottom: 1px solid var(--light-white-color);
 }
 .footer-main {
-  max-width: 40%;
+  max-width: 50%;
 }
 .footer-main h1{
   color: var(--white-color);
