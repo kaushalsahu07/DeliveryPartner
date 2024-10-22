@@ -33,6 +33,22 @@ DeliveryPartner is a web template designed for businesses that offer delivery se
     ```
 3. Open `index.html` in a web browser to view the template.
 
+## Adding New Pages
+
+You can expand the website by creating additional pages, such as:
+
+- **About Us:** Provide details about your business, mission, and team.
+- **Services:** List all the delivery services you offer with descriptions.
+- **Contact Us:** Create a form or provide details for customers to get in touch with your business.
+
+To add a new page:
+1. Create a new HTML file in the root directory (e.g., `about.html`).
+2. Link the new page to your navigation bar in `index.html`:
+    ```html
+    <li><a href="about.html">About Us</a></li>
+    ```
+3. Customize the page content as needed and apply CSS for styling.
+
 ## Usage
 
 This template can be modified to fit the needs of different delivery services. For example, replace placeholder content in the `index.html` file with your company's information, and update styles in the CSS files to match your branding.
