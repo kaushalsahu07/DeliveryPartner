@@ -59,4 +59,9 @@ Feel free to submit issues or feature requests by opening an issue in this repos
 
 ## Contact
 
-If you have any questions or suggestions, please open an issue or contact the repository maintainer.
+For any inquiries, reach out at [kaushal.r.sahu@outlook.com].<br>
+GitHub: [@kaushalsahu07](https://github.com/kaushalsahu07).<br>
+Linkedin: [@kaushalsahu07](www.linkedin.com/in/kaushalsahu07).<br>
+Instagram: [@cd.kaushal](https://www.instagram.com/cd.kaushal?igsh=cTVram1ia3Vvamxz).<br>
+Portfolio: [Website Link ](https://kaushalsahu07.github.io/portfolio/).<br>
+X (Tweeter): [@kaushalsahu_07](https://x.com/kaushalsahu_07?t=7nk-jApWrJkgW6YwklJZWQ&s=09).<br>
